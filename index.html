@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>For You 💗</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="hearts" aria-hidden="true"></div>
+
+  <main class="wrap">
+    <header class="hero">
+      <div class="badge">Valentine’s</div>
+      <h1>For my favorite person</h1>
+      <p id="typed" class="typed"></p>
+
+      <div class="actions">
+        <button id="replay">Replay</button>
+        <button id="reveal">Open note</button>
+      </div>
+    </header>
+
+    <section class="card">
+      <div class="toprow">
+        <div class="label">Bouquet sketch</div>
+        <div class="progress"><div id="bar" class="bar"></div></div>
+      </div>
+
+      <svg id="bouquet" viewBox="0 0 700 600" role="img" aria-label="A bouquet being drawn">
+        <!-- ribbon -->
+        <path class="stroke step" d="M350 520 C 330 500, 300 490, 275 500 C 305 510, 330 530, 350 545 C 370 530, 395 510, 425 500 C 400 490, 370 500, 350 520" />
+        <path class="stroke step" d="M350 545 C 330 560, 305 575, 285 580 C 310 590, 335 585, 350 575 C 365 585, 390 590, 415 580 C 395 575, 370 560, 350 545" />
+
+        <!-- stems -->
+        <path class="stroke step" d="M320 520 C 300 450, 285 390, 260 320" />
+        <path class="stroke step" d="M350 520 C 350 445, 355 380, 350 300" />
+        <path class="stroke step" d="M380 520 C 400 450, 420 390, 445 320" />
+
+        <!-- leaves -->
+        <path class="stroke step" d="M300 420 C 250 400, 235 440, 270 462 C 292 476, 310 455, 300 420" />
+        <path class="stroke step" d="M390 410 C 450 390, 470 430, 435 455 C 410 473, 385 450, 390 410" />
+        <path class="stroke step" d="M350 380 C 305 360, 300 315, 335 310 C 355 307, 365 335, 350 380" />
+
+        <!-- flower 1 (left) -->
+        <path class="stroke step" d="M240 300
+          m -28 0
+          a 28 28 0 1 0 56 0
+          a 28 28 0 1 0 -56 0" />
+        <path class="stroke step" d="M240 242 C 255 262, 255 285, 240 300 C 225 285, 225 262, 240 242" />
+        <path class="stroke step" d="M285 278 C 262 278, 250 290, 240 300 C 252 290, 262 278, 285 278" />
+        <path class="stroke step" d="M270 328 C 258 312, 250 306, 240 300 C 252 306, 258 312, 270 328" />
+        <path class="stroke step" d="M210 328 C 222 312, 230 306, 240 300 C 230 306, 222 312, 210 328" />
+        <path class="stroke step" d="M195 278 C 218 278, 230 290, 240 300 C 228 290, 218 278, 195 278" />
+
+        <!-- flower 2 (center) -->
+        <path class="stroke step" d="M350 285
+          m -32 0
+          a 32 32 0 1 0 64 0
+          a 32 32 0 1 0 -64 0" />
+        <path class="stroke step" d="M350 215 C 370 245, 370 265, 350 285 C 330 265, 330 245, 350 215" />
+        <path class="stroke step" d="M418 255 C 390 260, 372 272, 350 285 C 368 268, 386 258, 418 255" />
+        <path class="stroke step" d="M408 325 C 388 305, 370 295, 350 285 C 370 295, 388 305, 408 325" />
+        <path class="stroke step" d="M350 355 C 338 325, 338 305, 350 285 C 362 305, 362 325, 350 355" />
+        <path class="stroke step" d="M292 325 C 312 305, 330 295, 350 285 C 330 295, 312 305, 292 325" />
+        <path class="stroke step" d="M282 255 C 314 258, 332 268, 350 285 C 328 272, 310 260, 282 255" />
+
+        <!-- flower 3 (right) -->
+        <path class="stroke step" d="M460 300
+          m -28 0
+          a 28 28 0 1 0 56 0
+          a 28 28 0 1 0 -56 0" />
+        <path class="stroke step" d="M460 242 C 475 262, 475 285, 460 300 C 445 285, 445 262, 460 242" />
+        <path class="stroke step" d="M505 278 C 482 278, 470 290, 460 300 C 472 290, 482 278, 505 278" />
+        <path class="stroke step" d="M490 328 C 478 312, 470 306, 460 300 C 472 306, 478 312, 490 328" />
+        <path class="stroke step" d="M430 328 C 442 312, 450 306, 460 300 C 450 306, 442 312, 430 328" />
+        <path class="stroke step" d="M415 278 C 438 278, 450 290, 460 300 C 448 290, 438 278, 415 278" />
+      </svg>
+    </section>
+
+    <section id="note" class="note hidden" aria-live="polite">
+      <h2>My note to you 💌</h2>
+      <p id="noteText"></p>
+      <div class="sig">— yours</div>
+    </section>
+
+    <footer class="foot">Happy Valentine’s Day 💗</footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
